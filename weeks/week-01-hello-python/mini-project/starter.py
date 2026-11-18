@@ -1,24 +1,17 @@
-"""
-Mini-Project: ASCII Art Generator 🎨
-=====================================
-Tạo chương trình in hình ASCII đẹp từ tên người dùng.
+"""Mini-project mức A: vẽ thẻ ASCII tĩnh bằng print(), chưa có đáp án."""
 
-Chạy: python starter.py
-"""
+# TODO 1: In hàng viền trên bằng + và -.
+print("+----------------------------------+")
 
-# Bước 1: Hỏi tên người dùng
-ten = input("Nhập tên của bạn: ")
+# TODO 2: In lời chào giữa hai dấu |, giữ đúng độ rộng.
+print("|                                  |")
+print("|       XIN CHAO BAN!              |")
+print("|    CHAO MUNG DEN VOI PYTHON!     |")
+print("|                                  |")
 
-# Bước 2: Tính độ rộng khung
-# TODO: Tính width dựa trên len(ten)
+# TODO 3: In hàng viền dưới bằng hàng trên.
+print("+----------------------------------+")
+# TODO 4 (tự chọn): Thêm hình trang trí.
+print("          *  *  *")
+print("            *")
 
-# Bước 3: In khung trên
-# TODO: In dòng trên bằng ╔═══╗
-
-# Bước 4: In nội dung
-# TODO: In tên trong khung, căn giữa
-
-# Bước 5: In khung dưới
-# TODO: In dòng dưới bằng ╚═══╝
-
-# Gợi ý: Dùng str.center(width) để căn giữa
