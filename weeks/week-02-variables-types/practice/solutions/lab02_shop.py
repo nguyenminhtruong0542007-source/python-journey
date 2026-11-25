@@ -1,17 +1,22 @@
-"""Lời giải tham khảo 02 — dùng int cho đơn giá và số lượng."""
+"""Bài tương tự 02 — chuyển số lượng, tính tiền và nhận biết dữ liệu sai."""
 
-unit_price_text = "25000"
+unit_price_text = "25000"  # VND, text
 quantity_text = "3"
 invalid_text = "ba"
 
-unit_price_vnd = int(unit_price_text)
+# TODO 1: đổi unit_price_text và quantity_text sang số nguyên bằng int().
+unit_price = int(unit_price_text)
 quantity = int(quantity_text)
-total_vnd = unit_price_vnd * quantity
 
+# TODO 2: tính total_vnd = đơn giá * số lượng và in:
+# Thành tiền: 75,000 VND
+total_vnd = unit_price * quantity
 print(f"Thành tiền: {total_vnd:,} VND")
 
-# Không chuyển "ba" ngay sang int: int("ba") sẽ gây ValueError.
+# TODO 3: kiểm invalid_text.isdigit() trước khi đổi, in:
+# Tình huống sai: ba không phải số lượng hợp lệ
+# Không dùng float cho tiền VND của ví dụ này.
 if invalid_text.isdigit():
-    print("Không nên đến đây vì 'ba' không phải chữ số")
+    print(f"Số lượng hợp lệ: {int(invalid_text)}")
 else:
     print(f"Tình huống sai: {invalid_text} không phải số lượng hợp lệ")
