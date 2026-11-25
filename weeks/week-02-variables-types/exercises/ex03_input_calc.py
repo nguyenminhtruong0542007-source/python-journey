@@ -1,23 +1,22 @@
-"""
-Bài tập 03: Máy tính nhận input 🖥️
-====================================
-Mục tiêu: Kết hợp input() với tính toán
-"""
-
-# TODO 1: Nhập 2 số từ người dùng, in ra tổng, hiệu, tích, thương
+"""Official solution: calculations after input conversion."""
 
 
-# TODO 2: Nhập bán kính hình tròn, tính và in:
-# - Diện tích = π × r²
-# - Chu vi = 2 × π × r
-# Dùng pi = 3.14159
+def calculate_total(first: float, second: float) -> float:
+    """Return the sum of two converted numbers."""
+    return first + second
 
 
-# TODO 3: Nhập giá gốc và % giảm giá
-# Tính và in giá sau khi giảm
-# Ví dụ: Giá gốc 500,000, giảm 20% → 400,000
+def discounted_price(price: float, discount_percent: float) -> float:
+    """Return a price after a percentage discount."""
+    return price * (1 - discount_percent / 100)
 
 
-# TODO 4 (Thử thách): Máy đổi tiền
-# Nhập số tiền VNĐ, tỷ giá USD/VNĐ
-# In ra số USD tương ứng (làm tròn 2 chữ số)
+def vnd_to_usd(amount: float, exchange_rate: float) -> float:
+    """Convert VND using a caller-provided teaching exchange rate."""
+    return amount / exchange_rate
+
+
+if __name__ == "__main__":
+    first = float(input("Số thứ nhất: "))
+    second = float(input("Số thứ hai: "))
+    print(f"Tổng: {calculate_total(first, second)}")
